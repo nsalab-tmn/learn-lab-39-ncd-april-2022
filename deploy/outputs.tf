@@ -1,18 +1,18 @@
-output "learn_rg" {
-  value       = azurerm_resource_group.learn.name
-  description = "Main resource group"
+output "URL" {
+  value       = "https://portal.skillscloud.company"
+  description = "Main portal address"
   depends_on  = []
 }
 
 output "learn_user" {
-  value       = azuread_user.learn.user_principal_name
+  value       = data.external.user.result.login
   description = "Main User"
   depends_on  = []
 }
 
 output "learn_password" {
-  value       = azuread_user.learn.password
+  value       = data.external.user.result.password
   description = "Main Password"
-  sensitive = true
+  sensitive = false
   depends_on  = []
 }

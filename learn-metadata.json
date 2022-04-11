@@ -1,33 +1,11 @@
 {
-    "title": "Sample lab",
-    "shortName": "smpl_lab",
+    "title": "Начало работы в среде NSALAB Cloud ",
+    "shortName": "ncd",
     "materialType": "lab",
-    "description": "Sample description",
-    "assessmentPath": "./assessment/marking-scheme.json",
+    "description": "Демонстрационная лабораторная работа для ознакомления со средой NSALAB Cloud",
     "deploymentPath": "deploy",
     "testProjectPath": "testProject.md",
     "assetsPath": "assets",
-    "answerSchema": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-            "ticket1": {
-                "type": "string",
-                "placeholder": "answer1",
-                "title": "Вопрос 1"
-            },
-            "ticket2": {
-                "type": "string",
-                "placeholder": "answer2",
-                "title": "Вопрос 2"
-            },
-            "endpoint_url": {
-                "type": "string",
-                "title": "адрес приложения",
-                "placeholder": "https://example.com"
-            }
-        }
-    },
     "credentialsSchema": {
         "userName": {
             "title": "Имя пользователя",
@@ -39,13 +17,13 @@
         },
         "consoleURL": {
             "title": "Адрес портала",
-            "value": "https://portal.azure.com"
+            "source": "URL"
         }
     },
-    "duration": "PT3H30M",
-    "difficulty": 10,
+    "duration": "PT3H00M",
+    "difficulty": 3,
     "tags": [
-        "Azure", "SampleTag"
+        "Молодые профессионалы", "Worldskills", "Сетевое и системное администрирование"
     ],
     "skills": {}
 }
