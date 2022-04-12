@@ -1,3 +1,8 @@
 deploy/terraform.*
 deploy/.terraform
 deploy/.terraform.lock.hcl
+deploy/ncd/terraform.*
+deploy/ncd/.terraform
+deploy/ncd/.terraform.lock.hcl
+deploy/ncd/registry*
+.terraform*
