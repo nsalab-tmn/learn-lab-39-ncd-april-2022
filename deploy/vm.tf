@@ -1,4 +1,4 @@
-
+/*
 resource "rustack_vm" "ubuntu20" {
     vdc_id = resource.rustack_vdc.vdc.id
 
@@ -6,14 +6,13 @@ resource "rustack_vm" "ubuntu20" {
     cpu = 2
     ram = 4
 
-    template_id = data.rustack_template.ubuntu16.id
+    template_id = data.rustack_template.ubuntu20.id
 
     user_data = templatefile("${path.module}/user_data.tpl", { 
         admin_pass  = data.external.user.result.password, 
         s3_access_key   = var.s3_access_key,
         s3_secret_key   = var.s3_secret_key, 
         s3_bucket_images= var.s3_bucket_images,
-        s3_bucket_labs  = var.s3_bucket_labs,
         s3_endpoint     = var.s3_endpoint 
         }
     )
@@ -36,4 +35,4 @@ resource "rustack_vm" "ubuntu20" {
     ]
 }
 
-
+*/

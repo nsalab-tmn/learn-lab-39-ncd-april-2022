@@ -1,3 +1,4 @@
+/*
 resource "null_resource" "dns_provisioner" {
 
     provisioner "local-exec" {
@@ -16,10 +17,11 @@ resource "null_resource" "dns_provisioner" {
         command = "/bin/bash dns_deprovisioner.sh"
         when = destroy
    }
-*/
+
     depends_on = [
-      resource.rustack_vm.ubuntu16
+      resource.rustack_vm.ubuntu20
   ]
 
 
 }
+*/

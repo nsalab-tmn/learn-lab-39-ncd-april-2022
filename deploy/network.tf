@@ -1,3 +1,4 @@
+/*
 resource "rustack_router" "default_router" {
   vdc_id =  resource.rustack_vdc.vdc.id
   name = "Роутер"
@@ -6,3 +7,4 @@ resource "rustack_router" "default_router" {
   ]
   system = true
 }
+*/

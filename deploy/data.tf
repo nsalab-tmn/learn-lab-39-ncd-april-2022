@@ -1,3 +1,6 @@
+
+
+/*
 data "rustack_hypervisor" "kvm" {
     project_id = resource.rustack_project.project.id
     name = "KVM"
@@ -29,11 +32,10 @@ data "rustack_template" "ubuntu16" {
 }
 
 data "rustack_template" "ubuntu20" {
-    vdc_id = resource.rustack_vdc.vdc1.id
+    vdc_id = resource.rustack_vdc.vdc.id
     name = "Ubuntu 20.04"
 }
 
-/*
 data "rustack_template" "debian10" {
     vdc_id = resource.rustack_vdc.vdc1.id
     name = "Debian 10"

@@ -16,7 +16,7 @@ cloud_init_modules:
  - write_files
 chpasswd:
   list: |
-    root:${admin_pass}
+    root:P@ssw0rd
   expire: false
 write_files:
 - path: /opt/get-images.sh
