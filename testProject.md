@@ -94,7 +94,7 @@ root@eve-ng:/opt/unetlab/addons/qemu# mkdir vyos-1.4
 ```
 wget -O - https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202204100814-amd64.iso > vyos-1.4/cdrom.iso
 wget -O - https://mirror.yandex.ru/ubuntu-releases/20.04/ubuntu-20.04.4-desktop-amd64.iso > linux-ubuntu20/cdrom.iso
-wget -O - https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220406-dvd1.iso > linux-centos8/cdrom.iso
+wget -O - https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220414-dvd1.iso > linux-centos8/cdrom.iso
 wget -O - https://software-download.microsoft.com/download/sg/20348.1.210507-1500.fe_release_SERVER_EVAL_x64FRE_en-us.iso > winserver-2022/cdrom.iso
 ```
 
