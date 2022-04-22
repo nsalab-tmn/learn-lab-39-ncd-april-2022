@@ -92,26 +92,19 @@ root@eve-ng:/opt/unetlab/addons/qemu# mkdir vyos-1.4
 Скачайте установочные образы для каждой операционной системы используя следующие команды:
 
 ```
-wget -O - https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-202204100814-amd64.iso > vyos-1.4/cdrom.iso
-wget -O - https://mirror.yandex.ru/ubuntu-releases/20.04/ubuntu-20.04.4-desktop-amd64.iso > linux-ubuntu20/cdrom.iso
-wget -O - https://mirror.yandex.ru/centos/8-stream/isos/x86_64/CentOS-Stream-8-x86_64-20220406-dvd1.iso > linux-centos8/cdrom.iso
-wget -O - https://software-download.microsoft.com/download/sg/20348.1.210507-1500.fe_release_SERVER_EVAL_x64FRE_en-us.iso > winserver-2022/cdrom.iso
+wget -O - https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/VNV_AIcGF6DBHQ/vyos-1.4-rolling-202204190217-amd64.iso > vyos-1.4/cdrom.iso
+wget -O - https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/VNV_AIcGF6DBHQ/ubuntu-20.04.3-desktop-amd64.iso > linux-ubuntu20/cdrom.iso
+wget -O - https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/VNV_AIcGF6DBHQ/CentOS-Stream-8-x86_64-latest-dvd1.iso > linux-centos8/cdrom.iso
+wget -O - https://getfile.dokpub.com/yandex/get/https://disk.yandex.ru/d/VNV_AIcGF6DBHQ/20348.1.210507-1500.fe_release_SERVER_EVAL_x64FRE_en-us.iso > winserver-2022/cdrom.iso
 ```
 
 Создайте виртуальные диски для эмулятора qemu-kvm в формате qcow2 для каждого шаблона виртуальной машины с использованием следующих команд:
 
 ```
 root@eve-ng:/opt/unetlab/addons/qemu# qemu-img create -f qcow2 vyos-1.4/virtioa.qcow2 5G
-Formatting 'vyos-1.4/virtioa.qcow2', fmt=qcow2 size=5368709120 encryption=off cluster_size=65536 lazy_refcounts=off refcount_bits=16
-
 root@eve-ng:/opt/unetlab/addons/qemu# qemu-img create -f qcow2 linux-ubuntu20/virtioa.qcow2 15G
-Formatting 'linux-ubuntu20/virtioa.qcow2', fmt=qcow2 size=16106127360 encryption=off cluster_size=65536 lazy_refcounts=off refcount_bits=16
-
 root@eve-ng:/opt/unetlab/addons/qemu# qemu-img create -f qcow2 linux-centos8/virtioa.qcow2 15G
-Formatting 'linux-centos8/virtioa.qcow2', fmt=qcow2 size=16106127360 encryption=off cluster_size=65536 lazy_refcounts=off refcount_bits=16
-
 root@eve-ng:/opt/unetlab/addons/qemu# qemu-img create -f qcow2 winserver-2022/virtioa.qcow2 20G
-Formatting 'winserver-2022/virtioa.qcow2', fmt=qcow2 size=21474836480 encryption=off cluster_size=65536 lazy_refcounts=off refcount_bits=16
 ```
 
 Подробнее ознакомиться с форматом наименований виртуальных дисков можно на сайте eve-ng по ссылке: https://www.eve-ng.net/index.php/documentation/qemu-image-namings/ 
