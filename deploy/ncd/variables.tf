@@ -57,5 +57,5 @@ variable "s3_access_key" {
 
 variable "s3_secret_key" {
     type        = string
-    default     = "yAQkZ3HbnMAu9ExUA9SkI6HbNy6gFFZj6UW0IgKY"
+    default     = "key"
 }
